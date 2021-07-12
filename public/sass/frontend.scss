@@ -1,0 +1,29 @@
+.header-nav.stricky {
+    z-index: 1000;
+    position: fixed;
+    top: 0px;
+    margin-left: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+.dropdown-content{
+    min-height: 100px;
+}
+.bravo_user_profile_form .profile-social .form-control {
+    padding: 0px;
+}
+
+section {
+    // margin-bottom: 160px;
+}
+
+.grid_list_search_result .right_area ul li:last-child .dropdown.bootstrap-select.show-tick,
+.grid_list_search_result .right_area ul li:last-child button.btn.dropdown-toggle{
+  width: 130px;
+}
+
+
+.page-template-content .home_iconbox_container .home_content.home4 {
+    padding: 240px 0 55px;
+}

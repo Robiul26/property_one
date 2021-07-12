@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FindHouse Document</title>
+
+    <link rel="stylesheet" href="css/sphinx_rtd_theme.css" type="text/css"/>
+
+    <link rel="stylesheet" href="css/readthedocs-doc-embed.css" type="text/css"/>
+
+    <script src="jquery/modernizr.min.js"></script>
+    <style type="text/css">
+        img.padding{ padding-bottom:  25px; padding-top: 10px; }
+        .section ul li{ padding: 10px 0; }
+    </style>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+<div class="wy-grid-for-nav">
+
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+        <div class="wy-side-nav-search">
+
+
+            <a href="http://docs.bookingcore.org/" class="icon icon-home"> FindHouse Document </a>
+            <div role="search">
+                <div>
+                    <input type="text" name="q" placeholder="Search docs"/>
+                    <input type="hidden" name="check_keywords" value="yes"/>
+                    <input type="hidden" name="area" value="default"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+            <ul id="menu-envas-doc" class="menu">
+
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-340">
+                    <a href="#section-installation-wp-theme-2" class="menu-item"><span class="toctree-expand"></span>Installation
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="menu-item  menu-item-343"><a
+                                href="#section-host" class="menu-item">Hosting Requirements</a></li>
+                        <li class="menu-item  menu-item-343"><a
+                                href="#section-included" class="menu-item">What’s included</a></li>
+                        <li class="menu-item  menu-item-341"><a
+                                href="#section-install" class="menu-item">Installation System</a></li>
+                       <!--  <li class="menu-item  menu-item-341"><a
+                                href="#section-500er" class="menu-item">500error Before Installing</a></li>
+                        <li class="menu-item  menu-item-341"><a
+                                href="#section-500af" class="menu-item">500error After Installing</a></li> -->
+                         <li class="menu-item  menu-item-341"><a
+                                href="#section-update-1-3" class="menu-item">Updating System </a></li>
+                       
+
+                    </ul>
+                </li>
+
+                <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                    <a href="#section-menu" class="menu-item"><span class="toctree-expand"></span>Create Menu </a>
+                </li>
+
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-352">
+                    <a href="#section-theme-options-2" class="menu-item"><span
+                            class="toctree-expand"></span>Settings</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item  menu-item-353"><a
+                                href="#setting-gen" class="menu-item">General Settings</a></li> 
+                        <li class="menu-item">
+                            <a href="#setting-news" class="menu-item">News Settings </a></li>
+                        <li class="menu-item">
+                            <a href="#setting-property" class="menu-item">Properties Settings </a></li>
+                        
+                        <li class="menu-item">
+                            <a href="#setting-user" class="menu-item">User Settings</a></li>
+                        <li class="menu-item">
+                            <a href="#setting-Agent" class="menu-item">Agent Settings</a></li> 
+                      
+                        <li class="menu-item ">
+                            <a href="#setting-styling" class="menu-item">Styling Settings</a></li>
+                        <li class="menu-item">
+                            <a href="#setting-adv" class="menu-item">Advance Settings</a></li>
+                        <li class="menu-item">
+                            <a href="#setting-email" class="menu-item">Email Settings</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                    <a href="#section-homepage-2" class="menu-item"><span class="toctree-expand"></span>Home page</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="#section-template" class="menu-item">Using Templates </a></li>
+                        <li class="menu-item">
+                            <a href="#section-buildhome" class="menu-item"> Build Home Page</a></li>
+                     
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-357">
+                    <a href="#section-elements" class="menu-item"><span class="toctree-expand"></span>FindHouse Elements</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="#block-banner" class="menu-item">Banner Home</a></li>  
+                        
+                        <li class="menu-item">
+                            <a href="#block-property" class="menu-item">Property List </a></li> 
+                        <li class="menu-item">
+                            <a href="#block-location" class="menu-item"> List Location</a></li>
+                        <li class="menu-item"> <a href="#block-offer" class="menu-item"> Offer Block</a></li>
+                        <li class="menu-item"> <a href="#block-testimonial" class="menu-item"> List Testimonial</a></li>
+                        <li class="menu-item"> <a href="#block-news" class="menu-item">News List</a></li>
+                        <li class="menu-item"> <a href="#block-call" class="menu-item"> Cal to Action</a></li>
+                        <li class="menu-item"> <a href="#block-agent" class="menu-item"> Agent register form</a></li>
+                        <li class="menu-item"> <a href="#block-faqs" class="menu-item"> FAQs List</a></li>
+                        <li class="menu-item"> <a href="#block-partner" class="menu-item"> Our Partner</a></li>
+                        <li class="menu-item"> <a href="#block-text" class="menu-item"> Block Text</a></li>
+                        <li class="menu-item"> <a href="#block-contact" class="menu-item"> Block contact</a></li>
+                        <li class="menu-item"> <a href="#block-team" class="menu-item"> Our team</a></li>
+                         
+                    </ul>
+                </li>
+                 
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-360">
+                    <a href="#property-manage" class="menu-item"><span class="toctree-expand"></span>Property  </a>
+                    <ul class="sub-menu">
+                        <li class="menu-item ">
+                            <a href="#property-manage" class="menu-item">Property Listing </a></li>
+                        <li class="menu-item ">
+                            <a href="#create-property" class="menu-item">Creating a property</a></li>
+                        <li class="menu-item ">
+                            <a href="#property-category" class="menu-item"> Property Category</a></li>
+                            
+                        <li class="menu-item ">
+                            <a href="#property-attribute" class="menu-item">Attributes</a></li>
+                        <li class="menu-item ">
+                            <a href="#property-tag" class="menu-item">Tags Management</a></li>
+                         <li class="menu-item ">
+                            <a href="#property-contact" class="menu-item">Contact Management</a></li> 
+                        
+                       <li class="menu-item">
+                            <a href="#setting-property" class="menu-item">Propertys Settings </a></li>
+                    </ul>
+                </li> 
+                 
+                 <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                    <a href="#section-report" class="menu-item"><span class="toctree-expand"></span>Order Report </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-360">
+                    <a href="#section-post-2" class="menu-item"><span class="toctree-expand"></span>News </a>
+                    <ul class="sub-menu">
+                        <li class="menu-item ">
+                            <a href="#section-news" class="menu-item">Creating News</a></li>
+                        <li class="menu-item ">
+                            <a href="#setting-news" class="menu-item">News Listing </a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                    <a href="#section-homepage-2" class="menu-item"><span class="toctree-expand"></span>User Management</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="#section-user" class="menu-item">Create new User</a></li>
+                       
+                    </ul>
+                </li>
+                
+                <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                    <a href="#section-review" class="menu-item"><span class="toctree-expand"></span>Review  </a>
+                </li> 
+
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-364">
+                    <a href="#section-extra-2" class="menu-item"><span class="toctree-expand"></span>Language Settings</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="#section-language" class="menu-item">Language</a></li>
+                        <li class="menu-item">
+                            <a href="#section-translate" class="menu-item">Translations</a></li>
+                        <li class="menu-item">
+                            <a href="#section-multi-lang" class="menu-item">Multi-language</a></li>
+                    </ul>
+            </ul>
+            </li>
+            
+            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a href="#section-thanks" class="menu-item"><span class="toctree-expand"></span>Thank You!</a>
+            </li>
+            </ul>
+        </div>
+        &nbsp;
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+            <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+            <a href="index.html">FindHouse Doc</a>
+        </nav>
+
+
+        <div class="wy-nav-content">
+            <div class="rst-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <ul class="wy-breadcrumbs">
+                        <li><a href="http://docs.bookingcore.org/">Docs</a> &raquo;</li>
+
+                        <li class="current-section"></li>
+                        <li class="wy-breadcrumbs-aside"> 
+                            <a href="https://www.facebook.com/bookingcore/inbox/" class="fa fa-life-ring"> Support Page</a>
+                        </li>
+                    </ul>
+                    <hr/>
+                </div>
+                <div role="main" class="document">
+                    <div id="menu-envas-doc-1" class="menu document-posts">
+                        <section class="section document-section-item" id="section-general-2">
+                            <ul class="sub-menu">
+
+<!-- Server Requirements -->
+                                <section class="section document-section-item" id="section-host">
+                                    <h1><a
+                                        href="#section-host" class="toc-backref">Server Requirements</a> 
+                                    </h1>
+                                    <p style="text-align: justify;">The PHP Script framework has a few system requirements.  All of these requirements are satisfied by the PHP Script Homestead virtual  machine, so it's highly recommended that you use Homestead as your local PHP Script  development environment.</p>
+                                    <p>However, if you are not using Homestead, you will need to make sure your server  meets the following requirements:</p>
+
+                                    <ul style="text-align: justify;">
+                                        <li><a href="http://www.php.net/">PHP</a> version 7.2 </li>
+                                        <li>
+                                            <a href="https://ourcodeworld.com/articles/read/679/how-to-solve-the-requested-php-extension-bcmath-is-missing-from-your-system-when-installing-a-library-via-composer-in-ubuntu-16-04/">BCMath   PHP </a> Extension  </li>
+                                        <li>Ctype PHP Extension</li>
+                                        <li>JSON PHP Extension</li>
+                                        <li>Mbstring PHP Extension</li>
+                                        <li>OpenSSL PHP Extension</li>
+                                        <li>PDO PHP Extension</li>
+                                        <li>Tokenizer PHP Extension</li>
+                                        <li>XML PHP Extension</li>
+                                    </ul>
+                                    <img class="alignnone" src="images/st2.png"/>
+                                </section>
+
+<!-- What’s included -->
+                                <section class="section document-section-item" id="section-installation-wp-theme-2">
+                                    <ul class="sub-menu">
+                                        <section class="section document-section-item" id="section-included">
+                                            <h1><a href="#section-included" class="toc-backref">What’s included</a> </h1>
+                                            <article class="entry-content">
+                                                <p>When purchasing
+                                                    <strong>FindHouse</strong> from Codecanyon, you will be able to download FindHouse files with your Envato account. There will be two packages for you to choose: The
+                                                    <strong>Main Files</strong> contains all files, or the
+                                                    <strong>Installable FindHouse files</strong> with just necessary installable FindHouse files.
+                                                </p>
+                                                <p>If you choose Main Files, there will be an FindHouse Folder
+                                                    included:</p>
+                                                <div class="shortcode-list">
+                                                    <ul>
+                                                        <li><strong>FindHouse Folder</strong> – contains the
+                                                            <strong>FindHouse.zip</strong>
+                                                        </li>
+                                                        <li><strong>Documentation Folder</strong> – contains the
+                                                            <strong>Document</strong> for system
+                                                        </li>
+                                                        <li>
+                                                            <strong>Licensing Folder</strong> &#8211; contains the licensing files. (This is not your purchase code that you need to download from codecanyon).
+                                                        </li>
+                                                    </ul>
+                                                    <p>To find your licence key/purchase code you need to log into your Codecanyon account and go to your “Downloads” page.</p>
+                                                    <p>Locate some of the premium Script you purchased in your “Downloads” list and click on the <strong>Download</strong> and next on the “License Certificate&purchase code” link in drop-down menu.</p>
+                                    					<img class="alignnone" src="images/TF-update.png">
+
+                                                    <p></p></div>
+                                            </article>
+                                        </section>
+                                        <section class="section document-section-item" id="section-install">
+                                            <h1><a href="#section-install" class="toc-backref">Installation System</a>   </h1>
+                                            <article class="”entry-content”">
+                                               
+                                                <p>&nbsp;</p>
+                                               <p> <strong>Administrator: </strong>
+                                                <strong>Username: admin@dev.com</strong> /
+                                                    <strong>Pass: admin123</strong></p>
+
+                                               <p>  <strong>Agent:</strong>
+                                               <strong>Username: Agent1@dev.com</strong>/
+                                                    <strong>Pass: 123456Aa</strong></p>
+                                                 <p><strong>Customer:</strong>
+                                               
+                                                    <strong>Username: customer1@dev.com</strong> /<strong>Pass: 123456Aa</strong>
+                                                </p>
+                                                <p>&nbsp;</p>
+                                                
+                                                <h6>Follow the steps below to install FindHouse system .</h6>
+                                                <p>
+                                                    <strong>Step 1</strong> – Unzip the downloaded package from Codecanyon.
+                                                    Find the folder
+                                                    <strong>FindHouse</strong> and inside it find the file
+                                                    <strong>FindHouse.zip</strong> inside it.</p>
+                                                <p><strong>Step 2</strong> – Upload
+                                                    <strong>FindHouse.zip</strong> to your hosting and
+                                                    <strong>UNZIP</strong> file.</p>
+                                                <p><img class="padding" src="images/upload.png"/></p>
+
+
+                                                <p><strong>Step 3</strong>: – Open Browser with link URL:
+                                                    <strong> http://linkURL.com/install</strong> then Follow the panel to Install the Booking System
+                                                </p>
+                                                <p><img class="padding" src="images/st1.png"/></p>
+                                                <p>This is some Server information that is required for Booking System, please contact to your Supporter if the system is failed</p>
+                                                <p><img class="padding" src="images/st2.png"/></p>
+                                                <p>And Folder permission need to be set is 775</p>
+                                                <p><img class="padding" src="images/st3-issues.png"/></p>
+                                                <p><img class="padding" src="images/st3.png"/></p>
+
+                                                <p>After checking all information, we start to install System, Click to
+                                                    <strong>Form Wizard Setup</strong> button to Open Setting Panel </p>
+                                                <p><img class="padding" src="images/st4.png"/></p>
+                                                <p>Continue entering some your hosting information like: DB host, DB Post, DB Name, User of DB and Password then press
+                                                    <strong>Setup Application</strong> button to next to Application Step
+                                                    <strong>Or Edit .env file</strong> for install DB</p>
+                                                <p><img class="padding" src="images/st5.png"/></p>
+                                                <p>&nbsp;</p>
+                                                <p>Or try with<strong> Classic Text Editor</strong></p>
+                                                <p><img class="padding" src="images/st4-2.png"/></p>
+
+
+                                                <p>This is Installation Finished panel: </p>
+                                                <p><img class="padding" src="images/st6.png"/></p>
+                                                <p>&nbsp;</p>
+                                                <p>Finally, Log into your Site account by typing YOURDOMAIN.com/admin, replacing "YOURDOMAIN" with the actual domain you own.</p>
+
+                                                <strong>Administrator: </strong>
+                                                <p><strong>Username: admin@dev.com</strong> /
+                                                    <strong>Pass: admin123</strong></p>
+
+                                                <strong>Agent:</strong>
+                                                <p><strong>Username: Agent1@dev.com</strong>/
+                                                    <strong>Pass: 123456Aa</strong></p>
+                                                <strong>Customer:</strong>
+                                                <p>
+                                                    <strong>Username: customer1@dev.com</strong> /<strong>Pass: 123456Aa</strong>
+                                                </p>
+                                            </article>
+                                        </section>
+                                         <section class="section document-section-item" id="section-500er">
+                                            <h1><a href="#section-500er" class="toc-backref">500 ERROR Before Installing</a>   </h1>
+                                            <article class="”entry-content clear-both”">
+                                                <div class="row" >
+                                                 
+                                                 <div class="col-md-6"> 
+                                                    <h6>1- 500 Error before installing</h6>
+                                                    <p><strong>- *env file is existed</strong> - Use the script that is installed already. You should download the Newest version for New install </p>
+                                                    <p><strong>- PHP version is greater than 7.3</strong> - FindHouse is working fine in version 7.2.x.x It still haven't supported PHP 7.4 yet </p>
+                                                    <p><strong>- Files missing while move from FindHouse folder to public_html   </strong></p> 
+                                                 </div>
+                                                 <div class="col-md-6">
+                                                     <img src="images/500/before.jpg"> 
+                                                 </div> 
+                                                </div>
+
+                                                 <p>1. Show the Hidden files  </p>
+                                                     <img src="images/500/hide-file.png"> 
+                                                <p>2. Find the Hidden file and upload it again</p>
+                                                     <img src="images/500/missingfile.png"> 
+                                                 <h6></h6>
+                                                 
+                                            </article>
+                                        </section>
+                                        <section class="section document-section-item" id="section-500af">
+                                            <h1><a href="#section-500af" class="toc-backref">2- 500 Error after installing </a>   </h1>
+                                            <article class="”entry-content”">
+                                                <h3>1. The reason of 500|Server error</h3>
+                                                  <p><strong>* TURN ON the Debug to know the reason of issues</strong></p>
+                                                <p>Go to public_html/.evn file, <strong>open to turn TRUE the debug</strong></p>
+                                                <img src="images/500/b1.png"> 
+                                                <div class="row">
+                                                  <div class="col-md-6">
+
+                                                    <p> <strong>1 - Access Denied for User: </strong>After installing the Deny Warrning is showed because of the connection</p>
+                                                    <p><strong>2 - After installing,</strong> the 500|Server Error is showed, try to <strong>TURN ON</strong> the debug to see the reason of issues</p>
+                                                    <p>SQLSTATE[28000][1045] Access Denied for User</p>
+                                                    <img src="images/500/before.jpg">    
+
+                                                    <img src="images/500/err2.png">    
+                                                </div>
+                                                  <div class="col-md-6"> <img src="images/500/connect.png">  </div> 
+                                                </div>
+                                                <div class="row">
+
+                                                   <div class="col-md-6">
+                                                       <p>Other ERROR is <strong>SQL STATE[42S02]</strong> Base table or View not found: 1146 Table 'booking_core.core_setting' doesn't exist..</p>
+                                                       <p>=> The installation is failed, it hasn't built any table and has not imported any data yet</p>
+                                                   </div>
+                                                   
+
+                                                   <div class="col-md-6"> <img src="images/500/er1.jpg">    </div>
+                                                </div>
+
+                                                <h3>2. Fix 500 ERROR</h3> 
+
+                                                <p><strong>1 - Delete the .env file + storage/installed.php file </strong></p>
+                                                <img src="images/500/b2.png"> 
+                                                <p><strong>2 - Create new DB and new User</strong></p>
+                                                <p>Navigate to MySQL Databases to create new DB</p>
+                                                <img src="images/500/db1.png"> 
+                                                <p>Create new DB</p>
+                                                <img src="images/500/db2.png"> 
+                                                <p>Create new User</p>
+                                                <img src="images/500/db3.png"> 
+                                                <p>Assign Database to User</p>
+                                                <img src="images/500/db4.png"> 
+                                                  
+                                                <p><strong>2 - Start Install New site</strong></p>  
+                                                <p>Open your site with /install link and start to install</p>
+                                                <img src="images/500/in1.png"> 
+                                                <p>If press to <strong>TEST</strong> button then see the WARNING DENIED => you need to re-check your DB and the current user </p>
+                                                <img src="images/500/in2.png"> 
+                                                <p>This is Valid Notify</p>
+                                                <img src="images/500/in3.png"> 
+                                                <img src="images/500/in4.png"> 
+
+
+                                            </article>
+                                        </section>
+
+                                       
+                                        <section class="section document-section-item" id="section-update-1-3">
+                                            <h1><a  href="#section-update-1-3" class="toc-backref">Update System version </a>  </h1>
+                                            <article class="”entry-content”">
+                                                <p>
+                                                    <strong>Important steps: Backup your all files & Database and :</strong> On the Update case, there are 2 things in your hosting need to be carefully:
+                                                </p>
+                                                <p>* .env is DB information file </p>
+                                                <p>* All php files in your hosting </p>
+                                                <p>* Database: in this version there are many things is changed,If the update process is successful, all the old data will be preserved, but in case of unwanted events, you need to backup your db as well.</p>
+                                                <p>Note: Remember to backup files on your hosting.</p>
+ 
+                                            <p>&nbsp;</p>
+
+                                                <p><strong>1. Upload file zip to hosting</strong></p>
+                                                <p>
+                                                    <img class="padding text-right" src="images/tool/update-1.2.png"/>
+                                                </p>
+                                                <p><strong>2. Unzip new FindHouse zip file</strong></p>
+
+                                                <p>
+                                                    <img class="padding text-right" src="images/tool/update-1.2.2.png"/>
+                                                </p>
+
+                                                <p><strong>3. Access your domain.com/update/ to run the updater</strong>
+                                                </p>
+                                                <p>Link:<a href=""> http://yourdomain.com/<strong>update/</strong></a>
+                                                </p>
+                                                <p>
+                                                    <img class="padding text-right" src="images/tool/update-1.2.3.png"/>
+                                                </p>
+                                                <p>Wait in the minutes to update system, this is final step. After seeing the Migrated to 1.30, you can access to your HOME PAGE and check new version.</p>
+                                            </article>
+                                        </section>
+                                    </ul>
+                                </section>
+<!-- Create Menu -->
+                                <section class="section document-section-item" id="section-general-guide-2">
+                                    <ul class="sub-menu">
+                                        <section class="section document-section-item" id="section-menu"><h1><a href="#section-menu" class="toc-backref">Create Menu</a> </h1>
+                                            <article id="" class="hentry" style="display: block;">
+
+                                                <h4>Create normal Menu:</h4>
+                                                <div class="entry-content">
+                                                    <p><strong>To Setup A New Menu, Follow The Steps Below.</strong></p>
+                                                    <p style="padding-top: 10px;"><strong>Step 1 : </strong> Navigate to
+                                                        <strong>Dashboard &gt; Menus</strong> section of your admin.</p>
+                                                    <p><strong>Step 2 : </strong>Click the
+                                                        <strong>&#8220;Create A New Menu&#8221;</strong>
+                                                        link to make a new menu. Enter the name then hit the <strong>&#8220;Create
+                                                            Menu&#8221;</strong> button.</p>
+                                                    <p>  <img
+                                                            src="images/menu_normal.png"/>
+                                                    </p>
+                                                    <p>
+                                                        <strong>Step 3 : </strong>To add a menu item, select one of your created
+                                                        pages on the left hand side and click &#8220;Add to Menu&#8221;. You can
+                                                        also add all kinds of different posts from the left side.</p>
+                                                    <p>
+                                                        <strong>Step 4 : </strong>To add a custom menu item, enter a custom name
+                                                        and link into the &#8220;Links&#8221; box.</p>
+                                                    <p>
+                                                        <strong>Step 5 : </strong>Manage your menus by using the drag and drop
+                                                        functionality. To create a dropdown menu, simply drag a menu item below
+                                                        and slightly to the right of another menu item and it will lock into
+                                                        place and create a dropdown section.</p>
+                                                    <p>
+                                                        <strong>Step 6 : </strong>After setting up your menu, scroll down to the
+                                                        bottom of the page to assign
+                                                        <strong>Primary Navigation</strong> .</p>
+                                                    <p>
+                                                        <strong>Step 7 : </strong>Once its all done, make sure you click the
+                                                        &#8220;Save&#8221; button.</p>
+
+                                                <h4>Add link for Multi-language of Menu:</h4>
+                                                <p>Navigate to other languages then add the code of language to link, see the image below:</p>
+                                                        <img   src="images/multi-menu.png"/>
+
+                                                </div>
+
+                                            </article>
+                                        </section>
+
+                                    </ul>
+                                </section>
+ <!-- Settings                                -->
+                                <section class="section document-section-item" id="section-theme-options-2">
+                                    <ul class="sub-menu">
+                                        <section class="section document-section-item" id="setting-gen">
+                                            <h1><a href="#setting-gen" class="toc-backref">General Options</a>
+                                                <a class="headerlink" href="#setting-gen" >¶</a>
+                                            </h1>
+                                            <h4>1. General Settings:</h4>
+                                            <p>–  <strong>Site Information</strong>: Allow you to upload logo for your site on Top Header
+                                            </p>
+                                            <img class="padding  " src="images/opt/site_info.png"/>
+                                            <p>-
+                                                <strong>Date Format</strong>: Enter the Date format that fit your Country
+                                            </p>
+                                            <p>Here we formatted the date with&nbsp;<code>'j M Y H:i:s A e'</code> so it gives
+                                            </p>
+                                            <ul>
+                                                <li><code>j</code> –&nbsp;Day of the month without leading zeros (&nbsp;<em>1</em> to
+                                                    <em>31 )</em></li>
+                                                <li>
+                                                    <code>M</code> –&nbsp;A short textual representation of a month, three letters (&nbsp;<em>Jan</em> through
+                                                    <em>Dec</em>&nbsp;)
+                                                </li>
+                                                <li>
+                                                    <code>Y</code> –&nbsp;A full numeric representation of a year, 4 digits ( Examples:
+                                                    <em>1999&nbsp;</em>or <em>2003</em>&nbsp;)
+                                                </li>
+                                                <li><code>H:i:s</code> – Hours, minutes and seconds</li>
+                                                <li><code>A</code> – AM / PM</li>
+                                                <li><code>e</code> – Time zone ( default UTC )</li>
+                                            </ul>
+                                            <p>Or
+                                                <a target="_blank" href="https://justPHP Script.com/datetime-format-PHP Script/">read more here </a>
+                                            </p>
+
+                                            <p>&nbsp;</p>
+                                            <p>–  <strong>Language</strong>: Select the language that you want to use on Site, default English.
+                                            </p>
+                                            <img class="padding  " src="images/opt/lang-opt.png"/>
+                                            <p>&nbsp;</p>
+                                            <p>–  <strong>HomePage</strong>: Select the page that you want to set it as Home Page
+                                            </p>
+                                             <img class="padding  " src="images/opt/sethome.png"/>
+                                            <p>&nbsp;</p>
+
+                                            <h4 id="header-opt"><a href="#header-opt">2. Header and Footer Settings</a>
+                                            </h4>
+
+
+                                            <p>– <strong>Header Settings</strong>: Enter your information to change the Default infor
+                                            </p>
+                                            <p>From version 1.2, the content of Top bar is built in Code Editor:</p>
+                                            <p><img class="padding " src="images/opt/header-2.png"/></p>
+
+                                            <p>&nbsp;</p>
+                                            <p>– <strong>Footer Settings</strong>: 
+                                            </p>
+                                            <p>Default: there are 4 columns with size Col-3, just need to change the Content of each column, or change the number of column by the way you want</p>
+                                            <p>
+                                                <span>You can use HTML code on each column, that makes your information look nicer</span>
+                                            </p>
+                                            <p><img class="padding " src="images/opt/footer.png"/></p>
+                                            <p><strong>Footer bottom: </strong> </p>
+                                            <p><img class="padding " src="images/opt/footer-fr.png"/></p>
+                                            <p>This field type allow you input text/image/video.. and format it like the way you want</p>
+                                            <p><img class="padding " src="images/opt/footer-lr.png"/></p>
+                                             
+
+                                     <h4 id="contact-opt"><a href="#contact-opt">3. Contact Settings</a> </h4>
+                                     <p>–  <strong>Contact Information</strong>:  </p>
+                                        <img class="padding  " src="images/opt/contact.png"/>
+                                        <img class="padding  " src="images/opt/contact-opt.png"/>
+                                        <img class="padding  " src="images/opt/contact-partner.png"/>
+                                            
+                                        </section>
+
+                                        <section class="section document-section-item" id="setting-property">
+                                            <h1><a  href="#setting-property" class="toc-backref">Property Settings</a> </h1>
+                                            <p><strong>Property page settings: </strong></p>
+                                            <ol>
+                                                <li>Page Title: Input the name for Property</li>
+                                                <li>Slider banner for shop: upload the image you want to set for Banner in the Shop page </li>
+                                            </ol>
+                                            <p><img class="padding " src="images/opt/property.png"/></p> 
+                                            <p><strong>Review Options: </strong>for property detail</p>
+                                            <ul>
+                                                <li><strong>Write Review</strong>: Allow you to turn ON/OFF review form for property</li>
+                                                <li><strong>Enable review after booking</strong>: Check to the box to <strong>REQUIRE</strong> booking a property before doing Review </li>
+                                                <li><strong>Review approved</strong>: Check to the box to <strong>REQUIRE</strong> admin's approving the Review before Public</li>
+                                                 
+                                                </ul>
+                                            <p><img class="padding " src="images/opt/property-review.png"/></p> 
+                                            <p><img class="padding " src="images/opt/property-seo.png"/></p> 
+                                           
+
+                                        </section>
+                                    	
+                                        <section class="section document-section-item" id="setting-news">
+                                            <h1><a
+                                                    href="#setting-news" class="toc-backref">News Settings</a>
+                                                <a class="headerlink" href="#setting-news" >¶</a>
+                                            </h1>
+
+                                            <p>–  <strong>News Settings </strong>: You can change some information on this Page Setting: Title, Some Widget on sidebar, check the image below:
+                                            </p>
+                                            <p>-  <strong>Sidebar Options:</strong> This sidebar will be shown on Single Blog and Blog List</p>
+                                            <ol>
+                                                <li> Press to <strong>Add new</strong> button if you want to add new Widget for sidebar</li>
+                                                <li> Select the <strong>"Type"</strong> of widget you want to add, we are supporting 4 types: Search form, Recent News, Category, Tags, Content text</li>
+                                                <li> Input the title + corresponding content</li>
+                                                <li>Click the Trash icon if you want to delete any widget</li>
+                                            </ol>
+                                            <p><img class="padding  " src="images/opt/news-opt.png"/></p>
+                                        </section>
+                                         
+
+                                         
+										<section class="section document-section-item" id="setting-user">
+                                            <h1><a  href="#setting-user" class="toc-backref">User Settings</a> </h1>
+                                            <h4>1. Enable Captcha for Login/Register Form</h4>
+
+                                            <p>Navigate to <strong>Dashboard > Settings > User Settings</strong>, in this panel you can check/ uncheck to the box to Enable / Disable the Captcha option</p>
+                                            <img class="size-full" src="images/opt/user-cap.png"/>
+                                            <p>&nbsp;</p>
+                                              
+
+                                            <h4>2. Edit Email content</h4>
+                                            <p>This is Register email content for User: </p>
+                                            <p>Check to the box if you want to send email to User after registering new account</p>
+                                            <img class="size-full" src="images/opt/user-reg.png"/>
+                                            <p>And this is Notify email to Admin when have new Register,<strong> check to the Checkbox to Enable sending email to Admin</strong></p>
+                                            <img class="size-full" src="images/opt/user-reg-2.png"/>
+                                            <p> This is content of Forgot Password, you can change it easy here:</p>
+                                            <img class="size-full" src="images/opt/user-forgot.png"/>
+
+
+
+                                        </section>
+                                        <section class="section document-section-item" id="setting-Agent">
+                                            <h1><a  href="#setting-Agent" class="toc-backref">Agent Settings</a> </h1>
+                                            <h5> Agent Register</h5>
+                                            <p><strong> + Agent Auto Approved: </strong>check to the box if you don't want to check User before upgrading to Agent </p>
+                                            <p><strong> + Agent Role: </strong>select the Role you want user become</p>
+                                            <img class="size-full" src="images/opt/Agent-reg.png"/>
+                                            
+
+                                        </section>
+                                        <section class="section document-section-item" id="setting-styling">
+                                            <h1><a href="#setting-styling" class="toc-backref">Styling Settings</a>  </h1>
+
+                                            <p>
+                                                <strong>&#8211; Main Color</strong>: Select the color you want to set as Main
+                                                Color for site
+
+                                            <p>
+                                                <img class="padding 176" src="images/opt/styling_setting.png"/>
+                                            </p>
+                                            <p><strong>Custom CSS code</strong>: Allows you to enter custom CSS code to make some custom changes in site.</p>
+											<p>On the screenshot, we add some CSS code for changing the text on Header.</p>
+											<p><em>If you are developer, this options is quite useful for you</em></p>
+                                            <p>
+                                                <img class="padding 176" src="images/opt/css-custom.png"/>
+                                            </p>
+                                            <p><a href="#font"><strong id="font">Change the Google Font</strong></a></p>
+                                            <p><strong>Font Family</strong>: input the font you want to use on the site</p>
+                                            <p><strong>Font Size</strong>: input the font size corresponding with the Font Family</p>
+                                            <p><strong>Color</strong>: select the color for the site</p>
+                                            <p><strong>Line Height</strong></p>
+
+                                            <p>  <img class="padding 176" src="images/opt/font.png"/>  </p>
+                                            <p><strong>Add script: </strong></p>
+                                        <p>  <img class="padding 176" src="images/opt/font-web.png"/>  </p>
+
+                                        </section>
+
+
+                                        <section class="section document-section-item" id="setting-adv">
+                                            <h1><a  href="#setting-adv" class="toc-backref">Advance Settings</a>  </h1>
+
+
+                                            <p>Go to <strong>Settings > Advance Settings > Map Provider</strong>: now we support 2 map providers: Google Map and OpenStreetMap.org</p>
+                                            <p>If you use OpenStreetMap.org, you don't need to input any API key, it's free.</p>
+                                            <img class="padding" src="images/opt/adv-map.png"/></p>
+                                            <p>–  <strong>Google Map API Key: </strong>Enter your google API key to this field
+                                            </p>
+                                            <blockquote><p>From June 22, 2016 google no longer support key-less access (any request that not include an API key). &nbsp;That is reason why the map on your site is missed.</p>
+											<p>This post, we will guide you&nbsp; “How to get Google API for site”?.</p>
+											 </blockquote>
+											 <p>To get Google API, Go to this page to <a href="https://console.developers.google.com/flows/enableapi?apiid=maps_backend,geocoding_backend,directions_backend,distance_matrix_backend,elevation_backend,places_backend&amp;keyType=CLIENT_SIDE&amp;reusekey=true&amp;pli=1" target="_blank" rel="noopener noreferrer">Register your application for Google Maps</a></p>
+
+                                            <p>&nbsp;</p>
+
+                                            <p><strong>Square Size Unit: </strong></p>
+                                            <img class="padding" src="images/opt/adv-square.png"/></p>
+
+                                            <h4 id="header-opt"> 2. Social Login:  </h4> 
+                                              
+                                            <p><strong>- Captcha: </strong>check to box to allow Enable captcha in login/register form</p>
+
+                                            <img class="padding" src="images/opt/adv-cap.png"/></p>
+                                            <p><strong>- Custom Scripts: </strong>Add custom HTML script before and after the content, like tracking code</p>
+                                            <img class="padding" src="images/opt/adv-custom.png"/></p>
+
+                                        </section>
+ 									<section class="section document-section-item" id="setting-email">
+ 									 <h1><a  href="#setting-email" class="toc-backref">Email Settings</a> </h1>
+
+                                            <p> Now we are supporting 9 mail servers: <strong>SMTP, SENDMAIL, MAILGUN, MANDRILL, SES, SPARKPOST, POSTMARK, LOG, ARRAY</strong> </p>
+                                            <p>Below is simple guide of Mailgun Config:</p>
+                                            <ol>
+                                            	<li>Go to  <a href="https://medium.com/@arcomito/getting-your-mailgun-api-keys-and-secrets-setup-dd6b79c626c8">this link</a> to get mailgun API key </li>
+                                            	<li>Scroll down to the Config Email Server, then enter some required informations:</li>
+                                            </ol>
+                                             <img class="padding 176" src="images/opt/email-setting.png"/>
+                                            <p><strong>Email Testing: </strong>In case of necessity, you can input the email address into this box to check the mailing activity of your site</p>
+                                            
+                                            <p><strong></strong></p>
+                                        </section>
+
+                                       
+                                    </ul>
+                                </section>
+                                <section class="section document-section-item" id="section-homepage-2">
+                                    <ul class="sub-menu"> 
+                                        <section class="section document-section-item" id="section-template">
+                                        	<h1><a href="#section-template" class="toc-backref">Building Home Page</a></h1>
+                                        	<p><strong>Create New Page</strong></p>
+                                        	<p>- Navigate to Dashboard > Page > Add new button</p>
+                                         	<p>- For pages you usually just need to enter title and information for the article, not using any particular template.</p>
+                                            <p>
+                                             <img class="alignnone" src="images/elements/page.png"/>
+                                            <h4>Create normal Page</h4>
+                                            <p>On the demo data, the "Term&amp;Conditions" page will not be included, you need to build it yourself.</p>
+                                            <p>Follow these steps below:&nbsp;</p>
+                                            <ol>
+                                            <li>On the "Page" menu, you will see the Add New Page button, Press to button to create a new Blank page.</li>
+                                            <li>Input the Page name &amp; the content about Privacy and Cookies policy</li>
+                                            <li>Leave blank the selecting Template and Save the page</li>
+                                            </ol>
+                                            <p><img src="images/term.png" alt=""   /></p>
+                                            <p>4. Set the Term in the Settings:&nbsp;&nbsp;</p>
+                                            <p><img src="term2.png" alt=""  /></p>
+                                            <p>&nbsp;</p>
+
+                                            <h4>Using Template for Page</h4>
+                                            <p>The template is built only for specific pages, with lots of information with special styles, see <a href="http://docs.bookingcore.org/#section-buildhome">How to build homepage template</a>.</p>
+                                           
+                                            <p>SEO page is good Feature That makes Google search friendly </p>
+                                            <p><a target="_blank" href="http://docs.bookingcore.org/#section-buildhome"><img class="padding" src="images/elements/create_page.png"/></a>
+                                            </p>
+
+                                            <p>&nbsp;</p>
+
+                                            <h2></h2>
+                                        </section>
+                                        <section class="section document-section-item" id="section-buildhome"><h1><a
+                                                href="#section-buildhome" class="toc-backref">Building Home Page</a>
+                                            <a class="headerlink" href="#section-buildhome" >¶</a>
+                                        </h1>
+                                            <h4>Create a template</h4>
+
+                                            <p>To create Front page:</p>
+
+                                            <p>Step 1: Navigate to Template to build Home page content with FindHouse Elements</p>
+                                            <p>Step 2: Press to the
+                                                <strong>+</strong> icon to ADD new Element to the Template</p>
+                                            <p>Step 3: Navigate to <strong>Pages &gt; Add new</strong> Page</p>
+                                            <p>&nbsp;</p>
+                                            <p><img class="padding" src="images/elements/template.png"/></p>
+                                            <p>Step 4: Page Attributes box in right: choose
+                                                <strong>Home template</strong> and Save the Page</p>
+                                            <p>Step 5: Navigate to dashboard
+                                                <strong>Settings &gt; General Settings &gt; Home page</strong>&gt; Select the page created into the front page.
+                                            </p>
+                                            <h2></h2>
+                                            
+                                        </section>
+                                        <section class="section document-section-item" id="section-contact"><h1><a
+                                                href="#section-contact" class="toc-backref">Building Home Page</a> 
+                                        </h1>
+                                            <h4>Contact Management</h4>
+                                            <p>All email from the Page Contact will be added to this listing, Admin can check and contact to User by his way</p>
+                                            <p> Navigate to <strong>Report &gt; Contact Submissions</strong></p>
+                                            <p>Easy to Delete or Search email </p>
+                                            <p><img class="padding" src="images/user/contact.png"/></p>
+
+                                            <h2></h2>
+                                        </section>
+                                    </ul>
+                                </section>
+
+                                <section class="section document-section-item" id="section-elements">
+                                    <ul class="sub-menu">
+                                        
+                                        <section class="section document-section-item" id="block-banner">
+                                            <h1><a href="#block-banner" class="toc-backref">FindHouse Elements</a> 
+                                            </h1>
+                                            <h6>Dashboard > Templates > Build Template</h6>
+                                            <h4>Banner home</h4>
+                                             
+                                            <img class="padding" src="images/elements/banner.png"/>
+                                              
+                                        </section>
+                                        <section class="section document-section-item" id="block-property">
+                                            <h1><a href="#block-property" class="toc-backref">FindHouse Elements</a> 
+                                            </h1>
+                                            <h6>Dashboard > Templates > Build Template</h6>
+                                            <h4>Property List</h4>
+                                             
+                                            <img class="padding" src="images/elements/property.png"/>
+                                            
+                                             
+                                        </section>
+
+                                        <section class="section document-section-item" id="block-location">
+                                            <h1><a href="#block-location" class="toc-backref">FindHouse Elements</a> 
+                                            </h1>
+                                            <h6>Dashboard > Templates > Build Template</h6>
+                                            <h4>List Location</h4>
+                                             
+                                            <img class="padding" src="images/elements/lst_location.png"/>
+                                            
+                                             
+                                        </section>
+                                         <section class="section document-section-item" id="block-offer">
+                                            <h1><a href="#block-offer" class="toc-backref">FindHouse Elements</a> 
+                                            </h1>
+                                            <h6>Dashboard > Templates > Build Template</h6>
+                                            <h4> Offer Block </h4>
+                                             
+                                            <img class="padding" src="images/elements/offer-block.png"/>
+                                            
+                                             
+                                        </section>
+                                        
+                                         <section class="section document-section-item" id="block-partner">
+                                            <h1><a href="#block-partner" class="toc-backref">FindHouse Elements</a> 
+                                            </h1>
+                                            <h6>Dashboard > Templates > Build Template</h6>
+                                            <h4>Our Partner </h4>
+                                             
+                                            <img class="padding" src="images/elements/partner.png"/>
+                                            
+                                             
+                                        </section>
+                                         <section class="section document-section-item" id="block-contact">
+                                            <h1><a href="#block-contact" class="toc-backref">FindHouse Elements</a> 
+                                            </h1>
+                                            <h6>Dashboard > Templates > Build Template</h6>
+                                            <h4>Contact </h4>
+                                             
+                                            <img class="padding" src="images/elements/property.png"/>
+                                            
+                                             
+                                        </section>
+                                     <section class="section document-section-item" id="block-team">
+                                            <h1><a href="#block-team" class="toc-backref">FindHouse Elements</a> 
+                                            </h1>
+                                            <h6>Dashboard > Templates > Build Template</h6>
+                                            <h4>Our team </h4>
+                                             
+                                            <img class="padding" src="images/elements/team.png"/>
+                                            
+                                             
+                                        </section>
+                                        
+                                         <section class="section document-section-item" id="block-news">
+                                            <h1><a href="#block-news" class="toc-backref">FindHouse Elements</a> 
+                                            </h1>
+                                            <h6>Dashboard > Templates > Build Template</h6>
+                                            
+                                            <h4>  News List item  </h4>  
+                                            <p><strong>  Slider Style: </strong> Row section with 5 items per Slider</p>
+                                            <img class="padding" src="images/elements/news.png"/>
+                                             
+                                             <p>To create this section, Go to <strong>Dashboard > Templates > Build Template > News: List Items </strong> then input some needy informations</p>
+                                             <ul>
+                                                <li>Step 1: Enter Some Information like: Title(title of Section) and number item you want to show on Section</li>
+                                                <li>Step 2: Select Style for News section</li>
+                                                <li>Step 3: Filter by Location, depends on your design. Leave blank if you don't want to filter them</li>
+                                                <li>Step 4: Select Order list <strong>(Optional)</strong></li>
+
+                                            </ul>
+                                           
+                                        </section> 
+                                       
+                                        <section class="section document-section-item" id="block-call">
+                                            <h1><a href="#block-call" class="toc-backref">FindHouse Elements</a>  </h1>
+                                            <h6>Dashboard > Templates > Build Template</h6>
+
+                                            <h4> Call to Action</h4>
+                                            <img class="padding" src="images/elements/call_to_action-fr.png"/>
+
+                                            <p> This section provides information as an offer for customers who want to become Website partners, to build the section, enter some information below: </p>
+                                            <ul>
+                                                <li>Title: Enter a special title to attract customers' interest</li>
+                                                <li>Sub-title: Short description of an attractive offer, attractive reasons for ventor</li>
+                                            </ul>
+                                            <h4>
+                                            <img class="padding" src="images/elements/call_to_action.png"/>
+                                            </h4>
+                                        </section>
+                                       
+                                        <section class="section document-section-item" id="block-testimonial">  
+                                            <h1> <a href="#block-testimonial" class="toc-backref">FindHouse Elements</a>   </h1>
+                                            <h6>Dashboard > Templates > Build Template</h6>
+
+                                            <h4> List Testimonial</h4>
+                                             <img class="padding" src="images/elements/testimonial-fr.png"/> 
+
+                                            <p>Show as the Row section, there are 3 items per Row. This is Review for your Website, should use the Best Comment. To build this section just need to enter some information below: </p>
+                                            <ul>
+                                                <li>Step 1: Enter Title of Section</li>
+                                                <li>Step 2: Press to the <strong>ADD NEW</strong> to Open form content
+                                                </li>
+                                                <li>Step 3: Enter Name and the User's Comment</li>
+                                                <li>Step 4: Select the Star point as the customer satisfaction rating</li>
+                                                <li>Step 5: After building the Testimonial, Remember to
+                                                    <strong>SAVE CHANGE</strong> anything before Closing
+                                                </li>
+
+                                            </ul>
+                                             <img class="padding" src="images/elements/testimonial.png"/> 
+                                        </section>
+                                        
+                                        <section class="section document-section-item" id="block-text">
+                                            <h1><a href="#block-text" class="toc-backref">FindHouse Elements</a>   </h1>
+                                            <h6>Dashboard > Templates > Build Template</h6>
+
+                                            <h4>  Text Element</h4>
+                                            <p>This element is additions, you can use :</p>
+                                            <ul>
+                                                <li>Service Styles:</li>
+                                                <li>Content Align: Right, Center, Left</li>
+                                                <li>Icon: Icon for the element</li>
+                                                <li>Title: Name of the service</li>
+                                                <li>Desc: Description about it</li>
+                                            </ul>
+                                            <h4>
+                                                <img class="padding" src="images/elements/text_ele.png"/>
+                                            </h4>
+                                        </section>
+
+                                        <section class="section document-section-item" id="block-agent">
+                                            <h1><a href="#block-agent" class="toc-backref">FindHouse Elements</a> 
+                                            </h1> 
+                                            <h6>Dashboard > Templates > Build Template</h6>
+
+                                            <h4>  Agent Register form</h4>
+                                            <p>This is the way it shows in Register page:</p>
+                                            <img class="padding" src="images/elements/block.png"/>
+                                            <p>Same as the other block, find the element <strong>Agent Register form</strong> then input informations: Title, Description, youtube link and Featured image for youtube link.</p>
+                                            <p>But you need to input the link youtube video to show image background, because image is set as the Featured image of video. </p>
+                                            <img class="padding" src="images/elements/agent-form.png"/>
+                                             
+                                        </section>
+
+                                       
+                                        <section class="section document-section-item" id="block-faqs">
+                                            <h1><a href="#block-faqs" class="toc-backref">FindHouse Elements</a> 
+                                            </h1>
+                                            <h6>Dashboard > Templates > Build Template</h6>
+
+                                            <h4> FAQs Block</h4> 
+
+                                            <p> This is the way the <strong>FAQs block</strong> shows</p>
+                                            <p> There are 2 columns per row </p>
+                                            <img class="padding" src="images/elements/faqs-fr.png"/>
+                                           <p>To create this FAQs list, find in Template Blocks > <strong>FAQs block</strong>  </p>
+                                           <p><strong> Input the Questions and Answer of that question</strong></p>
+                                            <img class="padding" src="images/elements/faqs.png"/>
+                                             
+                                        </section>
+                                    </ul>
+                                </section>
+
+ 
+
+                                <section class="section document-section-item" id="property-manage">
+                                    <ul class="sub-menu">
+
+                                        <section class="section document-section-item" id="property-manage">
+                                        	<h1><a href="#property-manage" class="toc-backref">Property Management</a> </h1>
+
+                                            <h4>1. Property Management</h4>
+                                            <p>Navigate to
+                                                <strong>Dashboard > Property</strong>, this is property Management. You can do
+                                                <strong>Bulk Action</strong>(Delete, Trash) any property or
+                                                <strong>Search</strong> by any property Information like: Name, Category, Author..
+                                            </p>
+                                            <p>The Property List will get all property that is Publish Status, View more on <a href="http://findhouse.bookingcore.org/property" target="_blank">Page List property</a> </p>
+                                            <p>&nbsp;</p>
+                                            <p><img src="images/property/manage-property.png"></p>
+                                             
+                                        </section>
+                                        <section class="section document-section-item" id="create-property">
+                                            <h1><a
+                                                href="#create-property" class="toc-backref">Property Management</a>
+                                             
+                                            </h1>
+                                            <h4>Create New property</h4> 
+                                      
+                                        <h4>Adding a simple property</h4> 
+                                        <p>Go to <strong>Dashboard &gt; Propertys &gt; Add Property</strong>. You then have a familiar interface and should immediately feel at home.</p>
+                                        <p><strong>General information</strong>: </p>
+                                        <ol> 
+                                            <li>Select type for property</li>
+                                            <li>Enter a property <strong>Title</strong> and <strong>Content, Short Description</strong>.</li>
+                                            <li>Upload image to Add a Feature property image and a gallery of images </li>
+                                            <li>Set Status for property</li>
+                                            <li>Set as Featured property are described in the below section: Mark a property as Featured.</li>
+                                        </ol>
+                                            
+                                            <p><img src="images/property/p-create.png"></p>
+                                      
+                                            <p><img src="images/property/p-img.png"></p>
+                                                                   
+                                          <p><img src="images/property/p-information.png"></p>
+                                          <p><img src="images/property/p-location.png"></p>
+
+                                            <p><img src="images/property/p-seo.png"></p>
+                                             
+                                             
+                                          
+                                            <h2></h2>
+                                        </section>
+                                    <section class="section document-section-item" id="property-category"><h1><a href="#property-category" class="toc-backref">Property Category</a> </h1>
+                                        <p>Navigate to <strong>Dashboard &gt; property &gt; Category</strong>, this is category list of property. On right Panel, You can do
+                                        <strong>Bulk Action</strong>(Delete, Trash) any property or
+                                        <strong>Search</strong> by name of Category </p>
+                                        <p>On Left Panel, you can add Category for property easier.</p>
+                                            <p><img src="images/property/p-category.png"></p>
+
+                                    </section>
+                                        
+                                    <section class="section document-section-item" id="property-attribute">
+                                            <h1><a  href="#property-attribute" class="toc-backref">Property Attribute</a> </h1> 
+
+                                            <h4>Property's Attributes</h4>
+                                            <p>Navigate to <strong>Dashboard > Property > Attributes</strong> to see Panel manage. And just need to enter Name of Attributes => press to
+                                                <strong>Add New</strong> button, new Attribute will be created </p>
+                                            <p><img src="images/property/p-attribute.png"></p>
+                                            <p>After creating, you have to go to Manage Term of that Attribute by Press to
+                                                <strong>Manage Terms</strong> to add more Term for Attribute</p>
+                                            <p><img src="images/property/p-term.png"></p>
+                                             
+                                        </section>
+
+                                     <section class="section document-section-item" id="property-contact"><h1><a
+                                                href="#property-contact" class="toc-backref">Contact Management</a> </h1>
+                                         <p>This page saved all the contact information from all the property, base on the phone + email address is saved, you can contact to your customer, see the screenshot below:</p>
+                                            <p><img src="images/property/p-contact.png"></p>
+                                                
+                                    </section>
+                                    </ul>
+                                </section> 
+                                
+                                <section class="section document-section-item" id="-manage">
+                                    <ul class="sub-menu">
+
+                                        <section class="section document-section-item" id="reg-Agent">
+                                            <h1><a href="#reg-Agent" class="toc-backref">Register New Agent</a> </h1>
+                                             <p><strong> + Page Register for Agent   </strong></p>
+                                             <img class="padding" src="changelog/1.3/page.png"/>
+                                            <h4>1. Create Page Register</h4>
+                                            <p><strong>Go to Dashboard > Templates >  find the element Agent Register form </strong>then input informations: Title, Description, youtube link and Featured image for youtube link. .</p>
+                                            <p><img src="images/Agent/createpage.png"></p>
+                                            <p><strong>Manage the List Agent Register: </strong> go to Users > User UpgradeRequest</p>
+                                            <p><img src="images/Agent/approve.png"></p>
+
+                                        </section>
+
+                                        <section class="section document-section-item" id="Agent-dashboard">
+                                            <h1><a href="#Agent-dashboard" class="toc-backref">Agent Dashboard</a> </h1>
+                                             
+                                            <h4>Agent Profiles</h4>
+
+                                             <img class="padding" src="changelog/1.3/Agent.png"/>
+                                           
+                                        </section>
+
+                                    </ul>
+                                </section>
+
+                               
+
+                               
+                                <section class="section document-section-item" id="section-review">
+                                    <h1><a href="#section-review" class="toc-backref">Review Management</a>
+                                        <a class="headerlink" href="#section-review" >¶</a>
+                                    </h1>
+                                    <article class="entry-content">
+                                        <h4>1. Review Management</h4>
+                                        <p>Navigate to <strong>Dashboard > Reviews</strong>, this is Review Management
+                                            <strong>Only for property</strong>, we don't support review for News. You can do
+                                            <strong>Bulk Action</strong>(Approved, Pending, Spam Delete, Trash) any review or
+                                            <strong>Search</strong> by any Review Information like: Name, Review content, Author..
+                                        </p>
+                                        <p>The Review List will get all Review that is Approved Status,
+                                        <p><img src="images/review.png"></p>
+                                        <h4>2. Review Setting</h4>
+                                         <p><strong>Review Options: </strong>for property detail</p>
+                                            <ul>
+                                                <li><strong>Write Review</strong>: Allow you to turn ON/OFF review form for property</li>
+                                                <li><strong>Enable review after booking</strong>: Check to the box to <strong>REQUIRE</strong> booking a property before doing Review </li>
+                                                <li><strong>Review approved</strong>: Check to the box to <strong>REQUIRE</strong> admin's approving the Review before Public</li>
+                                                 
+                                                </ul>
+                                            <p><img class="padding " src="images/opt/review.png"/></p> 
+                                        <h4>Review Form</h4>
+                                        <p><img src="images/review_form.png"></p>
+
+
+                                    </article>
+
+                                </section>
+                                <section class="section document-section-item" id="location_manage">
+                                    <h1><a href="#location_manage" class="toc-backref">Location Manage</a>
+                                        <a class="headerlink" href="#location_manage" >¶</a>
+                                    </h1>
+                                    <article class="entry-content">
+                                        <h4>Dashboard > Location </h4>
+                                        <p>You can create a location directly in the control panel </p>
+                                        <p>
+                                            <strong>1: On Left panel</strong> you can see the form that use to create new Location =>
+                                            <strong> Add new Location</strong></p>
+                                        <p> Just need to enter the Location Name, select Parent(Optional), Mark to the Map Engine then
+                                            <strong>Add New</strong></p>
+                                        <p>
+                                            <strong>2: On the Right Panel</strong> is list Location, you can manage it easy, do
+                                            <strong>Bulk Action</strong>(Approved, Pending, Spam Delete, Trash) any review or
+                                            <strong>Search</strong> by Location name</p>
+                                        <p><img class="padding" src="images/location.png"/></p>
+                                        <p>&nbsp;</p>
+                                        <h4>Edit Location </h4>
+                                        <p><img class="padding" src="images/location-edit.png"/></p>
+
+                                    </article>
+                                </section>
+
+                                <section class="section document-section-item" id="section-news">
+                                    <ul class="sub-menu">
+                                        <section class="section document-section-item" id="section-news"><h1><a
+                                                href="#section-news" class="toc-backref">Creating Blog Posts</a>
+                                            <a class="headerlink" href="#section-news" >¶</a>
+                                        </h1>
+                                            <article class="entry-content">
+
+                                                <h4>Steps to Create A Blog Post:</h4>
+                                                <p style="padding-top: 10px;"><strong>Step 1</strong> – In your
+                                                    <strong>Dashboard</strong>,
+                                                    go to <strong>Posts</strong>, <strong>Add New</strong></p>
+                                                <p><img class="padding" src="images/news.png"/></p>
+
+                                                <p>
+                                                    <strong>Step 2</strong> – Enter the post&#8217;s title and content in the
+                                                    editing field.</p>
+                                                <p><strong>Step 3</strong> – Add
+                                                    <strong>Categories</strong>: To assign it to
+                                                    the post, check the box next to the Category name.</p>
+                                                <p><strong>Step 4</strong> – Add
+                                                    <strong>Tags</strong>: Type the words to be
+                                                    tagged, separate multiple tags with commas.</p>
+                                                <p><strong>Step 5</strong> – Choose Featured image: click
+                                                    <strong>“Set Featured
+                                                        Image”</strong> then choose a image for your post.</p>
+                                                <p><strong>Step 6</strong> -
+                                                    <strong> SEO post</strong>: Leave blank if you want to use Default Information to SEO
+                                                </p>
+
+                                                <p><strong>Step 7</strong> – When you have finished, click
+                                                    <strong>Publish</strong> to save and publish the post.</p>
+                                                <p><img class="padding" src="images/create-post.png"/></p>
+
+                                            </article>
+                                        </section>
+                                    </ul>
+                                </section>
+                                <section class="section document-section-item" id="section-homepage-2">
+                                    <ul class="sub-menu">
+
+                                        <section class="section document-section-item" id="section-user">
+                                            <h1><a href="#section-user" class="toc-backref">User management</a>
+                                                <a class="headerlink" href="#section-user" >¶</a>
+                                            </h1>
+                                            <h4>Dashboard > Users > All User </h4>
+
+                                            <p>Users are people who use services provided by customers and each user can have Role limitations. Customers can create, modify and delete users but the owner is the subscriber who is also the owner of these customers. To separate users among customers of one subscriber, user prefix is used.</p>
+                                            <p>1. Easy Management and create new user. </p>
+                                            <p>2. Change Password</p>
+                                            <p>&nbsp;</p>
+                                            <p><img class="padding" src="images/user/user_mana.png"/></p>
+
+                                            <h2></h2>
+                                        </section>
+
+                                        <section class="section document-section-item" id="section-verify">
+                                            <h1><a href="#section-verify" class="toc-backref">Roles management</a>   </h1>
+                                            <h4>1. Sending Request Verify</h4> 
+                                            <p>After become to Customer or Agent Role, Admin can require your informations to verify you</p>
+                                            <p>From your Dash Board you can see the <strong>Verifications menu item</strong> </p>
+                                            <p>Click to <strong>Update Verification data</strong> button to open form and input the required information</p>
+                                            <p>If you are <strong>Agent Role</strong>, clients can open your Profile and see you are the trusted guys </p>
+                                            
+                                             <h4>2. Verification New Request</h4>
+                                             <p>To verify new request, go to <strong>User > Verification Request</strong>, the highlight number will be shown whenever have new requests </p>
+                                             <p>- Click to <strong>View request button</strong> to open a Request </p>
+                                             <p>- By some means, after receiving the required information, you can call directly or email manually to confirm with Agent.</p>
+                                             <p>- The last Step, confirm to the valid information and <strong>Save</strong></p>
+                                           
+                                             <p><strong>Dashboard > Users > Role Management </strong></p>
+
+                                            <p><img class="padding" src="images/user/verify.png"/></p>
+                                        </section>
+
+
+                                        <section class="section document-section-item" id="section-role">
+                                            <h1><a href="#section-role" class="toc-backref">Roles management</a>   </h1>
+                                            <h4>Dashboard > Users > Role Management </h4>
+                                            <strong>Create New Role </strong>
+                                            <p> This panel is Role listing, Admin can create new Role easy, just need to enter its name.</p>
+                                            <p><img class="padding" src="images/user/role.png"/></p> 
+
+                                            <p>After create the Name of ROLE, see the
+                                                <strong>Permission Matrix</strong> button</p>
+                                            <p><strong>Check</strong> to the Permission you want to share to User Role
+                                            </p>
+                                            <p><img class="padding" src="images/user/matrix.png"/></p>
+
+                                        </section>
+                                    
+
+                                    </ul>
+                                </section>
+                                <section class="section document-section-item" id="section-multi-lang"><h1><a
+                                        href="#section-multi-lang" class="toc-backref">Multi-languages
+                                </a>
+                                    <a class="headerlink" href="#section-multi-lang" >¶</a>
+                                </h1>
+
+                                    <p>From version 1.2, our FindHouse system is ready for multi-language features, which means you can
+                                        easily use multiple languages on your website. Here are some guidelines:</p>
+                                    <h4 id="enable-multi"><a href="#enable-multi">1. Enable Multi-Language</a></h4>
+                                    <p>Firstly, navigate to <strong><em>Dashboard -&gt; Settings -&gt; General Settings ->
+                                        Language </em></strong>:</p>
+                                    <p>1. <strong>Select Main language:</strong> This is an important step for building your website
+                                        content. Because sub-languages are only recompiled from the main language, if you are using EN as
+                                        the primary language and suddenly switch to JA, your website will be failed. Because no main-content
+                                        of JA to use.</p>
+                                    <p>2. The next step, <strong>Enable Multi languages:</strong> Check to the box to Enable Multi-languages
+                                        for site</p>
+                                    <p><img src="images/opt/lang-opt.png" alt="Multi-language for property"/></p>
+                                    <p>3. After activate the Multi-languages you will see your website has <strong>Language bar</strong></p>
+                                    <p>&nbsp;</p>
+
+                                    <h4 id="start-multi"><a href="#start-multi">2. Start translate for site</a></h4>
+                                    <p>We will start the example for property, there are 3 steps to complete: <strong>property content, property
+                                        attribute, and property Block on homepage</strong></p>
+
+                                    <p><strong>1. property Content</strong></p>
+                                    <p>The language bar only appears when updating an existed property, which means you won't be able to create
+                                        a language from the first property creation.</p>
+                                    <p>This is the property content of the sub-language (Japanese), there will be some hidden content such as
+                                        Images sections(Featured image, Gallery, video ..), the price section ..that have been set in main
+                                        language.</p>
+                                    <p>In sub-languages, you can only translate content that is textual</p>
+                                    <p><img src="images/tool/lang-property.png" alt="Multi-language for property"/></p>
+                                    <p>&nbsp;</p>
+
+                                    <p><strong>2. Property Attributes</strong></p>
+                                    <p>The law of multilingual is only able to translate the available content, as well this is the property's
+                                        Attribute Management Part</p>
+                                    <p>In the property Attributes, there are 2 things need to clearly:</p>
+                                    <p><i>1. Multi-language for Attributes</i></p>
+                                    <p> - Click to edit button or Name of Attribute to go to edit page </p>
+                                    <p> - Navigate to the Sub-Language tab and do translate</p>
+                                    <p><i>2. Multi-language for Term's attribute</i></p>
+                                    <p> - Click to <strong>Term Management</strong> of duration respectively to view list term</p>
+                                    <p> - Click to the Term's name to edit it</p>
+                                    <p> - Navigate to the Sub-Language tab and do translate</p>
+                                    <p><img src="images/tool/lang-attr.png" alt="Multi-language for property"/></p>
+                                    <p>&nbsp;</p>
+
+                                    <p><strong>3. Property Block of Homepage</strong></p>
+                                    <p><img src="images/tool/lang-property-block.png" alt="Multi-language for property"/></p>
+                                    <p>&nbsp;</p>
+
+                                    <p><strong>4. Translate FindHouse script</strong> <a
+                                            href="http://docs.bookingcore.org/#section-translate" target="_blank">click here</a> to know..
+                                    </p>
+
+
+                                </section>
+                                
+                    </div>
+                </div>
+                <footer>
+
+                    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+
+                        
+                    </div>
+
+
+                    <hr/>
+
+                    <div role="contentinfo">
+                        <p>
+                            &copy; Copyright 2020, BookingCore Team.
+                        </p>
+                    </div>
+
+                </footer>
+
+            </div>
+        </div>
+
+    </section>
+</div>
+
+
+<script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT: './',
+        VERSION: '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE: true
+    };
+</script>
+
+<script type="text/javascript" src="jquery/jquery-2.0.3.min.js"></script>
+<script type="text/javascript"
+        src="jquery/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="jquery/underscore.js"></script>
+
+<script type="text/javascript" src="jquery/custom.js"></script>
+
+<style>
+    .document-section-item {
+        display: none;
+    }
+</style>
+</body>
+</html>
+
